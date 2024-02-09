@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VigiAIO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="C:\Users\harsh\Desktop\Projects\prototype web page\logo.jpeg" alt="VigiAIO Logo">
+      <h1>VigiAIO</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="image-container" id="imageContainer" style="display: none;">
+      <img id="uploadedImage" alt="Uploaded Image">
+    </div>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="processImage()">Process Image</button>
+    <div id="questions" style="display: none;">
+      <div id="question1">
+        <p>How prolonged a period of time you are facing this issue?</p>
+        <input type="text" id="answer1" placeholder="Enter your answer">
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+      <div id="question2" style="display: none;">
+        <p>Are you taking any kind of drug or any sort of medicine in the last 1 year?</p>
+        <input type="text" id="answer2" placeholder="Enter your answer">
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+      <div id="question3" style="display: none;">
+        <p>Any other remarks you want to add?</p>
+        <input type="text" id="answer3" placeholder="Enter your answer">
+        <button onclick="submitAnswers()">Submit</button>
+      </div>
+    </div>
+    <div id="output" style="display: none;">
+      <h2>Stop the Medication:</h2>
+      <p>Discontinue the use of the barbiturate immediately and seek medical attention.</p>
+      <h2>Hydration:</h2>
+      <p>Drink plenty of water to stay hydrated, which can aid in flushing out the medication from your system.</p>
+      <h2>Topical Treatments:</h2>
+      <p>Your healthcare provider may recommend over-the-counter creams or ointments to soothe the rash. However, do not self-prescribe without consulting a professional.</p>
+      <h2>Avoid Scratching:</h2>
+      <p>Try to refrain from scratching the affected areas to prevent further irritation and potential infection.</p>
+      <h2>Nearest hospital:</h2>
+      <p>Holy Family Hospital</p>
+      <p>097168 32485</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
